@@ -26,3 +26,5 @@ tree = buildOctree(grid_coord, level)
 ```
 
 in which `grid_coord` is the spatial indices of all nodes within the octree, with a shape like `[N, 3]`, while `level` is the levels of each node with a shape like `[N, 1]` or `[N]`.
+
+The output `tree` is a `[N, 1]` shape tensor, with the `i`-th element indicating the parent node of the `i`-th node is the `tree[i]`-th node. If no parent node of node `i` matches, `tree[i]` is set to be `-1`.
