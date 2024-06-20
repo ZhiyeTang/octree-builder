@@ -1,5 +1,5 @@
 # octree-builder
-A CUDA-implemented octree-builder module
+A CUDA-implemented octree-builder module.
 
 ## Dependencies
 This code has only been built and tested under `Ubuntu-20.04` with `RTX 3090` GPU. Other dependencies:
